@@ -70,6 +70,19 @@ function draw(){
           drops[i].updateY();
           
       }
+
+
+    if(keyDown("left")){
+    Matter.Body.setPosition(umbrella.umbrella,{x:umbrella.umbrella.position.x-10,y:umbrella.umbrella.position.y})
+
+
+    }
+
+    if(keyDown("right")){
+Matter.Body.setPosition(umbrella.umbrella,{x:umbrella.umbrella.position.x+10,y:umbrella.umbrella.position.y})
+
+
+    }
   
       drawSprites();
 }   
